@@ -1,0 +1,58 @@
+.custom-rounded-tr {
+    border-top-right-radius: 10rem; /* Adjust the radius as needed */
+  }
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slideDown {
+    animation: slideDown 0.6s ease-out forwards;
+  }
+
+  .animate-slideUp {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+  /* For all scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: rgba(254, 212, 47, 0.3); /* Yellowish background */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: rgba(210, 220, 16, 0.8); /* Green thumb */
+}
+
+/* Hover effect on scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 0, 1); /* Darker green on hover */
+}
+
+
+
+.your-scrollable-div {
+  -ms-overflow-style: none; /* Hides scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
